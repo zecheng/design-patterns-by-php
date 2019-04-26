@@ -1,8 +1,8 @@
 <?php 
 
 /**
-* abstract class
-*/
+ * abstract class
+ */
 abstract class Strategy
 {
     // 算法方法
@@ -10,8 +10,8 @@ abstract class Strategy
 }
 
 /**
-* 算法a
-*/
+ * 算法a
+ */
 class ConcreteStrategyA extends Strategy
 {
     public function AlgorithmInterface()
@@ -22,8 +22,8 @@ class ConcreteStrategyA extends Strategy
 
 
 /**
-* 算法b
-*/
+ * 算法b
+ */
 class ConcreteStrategyB extends Strategy
 {
     public function AlgorithmInterface()
@@ -33,8 +33,8 @@ class ConcreteStrategyB extends Strategy
 }
 
 /**
-* 算法a
-*/
+ * 算法a
+ */
 class ConcreteStrategyC extends Strategy
 {
     public function AlgorithmInterface()
@@ -44,8 +44,8 @@ class ConcreteStrategyC extends Strategy
 }
 
 /**
-* 上下文context
-*/
+ * 上下文context
+ */
 class Context
 {
     private $strategy;

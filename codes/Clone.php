@@ -57,11 +57,11 @@ class Resume
 // 客户端代码
 $resume = new Resume("大鸟");
 $resume->setPersonalInfo("男", 29);
-$resume->setWorkExperience("1998-2000","xxx 公司");
+$resume->setWorkExperience("1998-2000", "xxx 公司");
 
 $resume2 = clone $resume;
 $resume2->setPersonalInfo("男", 40);
-$resume2->setWorkExperience("1998-2010","xx 公司");
+$resume2->setWorkExperience("1998-2010", "xx 公司");
 
 $resume->display();
 $resume2->display();

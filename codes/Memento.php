@@ -2,7 +2,8 @@
 
 //发起人类
 class Originator
-{   
+{
+   
     // 需要保存的属性，可能有多个
     private $state;
     public function setState($state)

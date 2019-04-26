@@ -60,7 +60,7 @@ class Facade
         $this->systemThree->methodThree();
     }
 
-        public function methodB()
+    public function methodB()
     {
         echo "方法B() ---\n";
         $this->systemTwo->methodTwo();

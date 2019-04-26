@@ -2,7 +2,8 @@
 
 // 人
 class Person
-{   
+{
+   
     private $name;
     function __construct($name)
     {
@@ -28,8 +29,7 @@ class Finery
 
     public function show()
     {
-        if ($this->person != null)
-        {
+        if ($this->person != null) {
             $this->person->show();
         }
     }

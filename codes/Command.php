@@ -54,8 +54,7 @@ class Waiter
     //设置订单
     public function setOrder(Command $command)
     {
-        if ($command instanceof BakeChickenWingCommand)
-        {
+        if ($command instanceof BakeChickenWingCommand) {
             echo "服务员： 鸡翅没有了，请点别的烧烤\n";
         } else {
             echo "增加订单\n";
@@ -64,7 +63,9 @@ class Waiter
     }
 
     //取消订单
-    public function cancelOrder(Command $command){}
+    public function cancelOrder(Command $command)
+    {
+    }
 
     //通知执行
     public function notify()

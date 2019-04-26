@@ -26,8 +26,8 @@ class Operation
 }
 
 /**
-*  add 
-*/
+ *  add 
+ */
 class OperationAdd extends Operation
 {
     public function getResult()
@@ -37,8 +37,8 @@ class OperationAdd extends Operation
 }
 
 /**
-* Mul
-*/
+ * Mul
+ */
 class OperationMul extends Operation
 {
     public function getResult()
@@ -48,8 +48,8 @@ class OperationMul extends Operation
 }
 
 /**
-* sub
-*/
+ * sub
+ */
 class OperationSub extends Operation
 {
     public function getResult()
@@ -59,8 +59,8 @@ class OperationSub extends Operation
 }
 
 /**
-* div
-*/
+ * div
+ */
 class OperationDiv extends Operation
 {
     public function getResult()

@@ -33,8 +33,7 @@ class ConcreteIterator extends IteratorClass
     {
         $ret = null;
         $this->current++;
-        if ($this->current < count($this->aggregate))
-        {
+        if ($this->current < count($this->aggregate)) {
             $ret = $this->aggregate[$this->current];
         }
         return $ret;

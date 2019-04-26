@@ -55,9 +55,13 @@ class ConcreteCompany extends Company
 //人力资源部
 class HRDepartment extends Company
 {
-    public function add(Company $c){}
+    public function add(Company $c)
+    {
+    }
 
-    public function remove(Company $c){}
+    public function remove(Company $c)
+    {
+    }
 
     // 显示其枝节点名称，并对其下级进行遍历
     public function display($depth)
@@ -73,9 +77,13 @@ class HRDepartment extends Company
 //财务部
 class FinanceDepartment extends Company
 {
-    public function add(Company $c){}
+    public function add(Company $c)
+    {
+    }
 
-    public function remove(Company $c){}
+    public function remove(Company $c)
+    {
+    }
 
     // 显示其枝节点名称，并对其下级进行遍历
     public function display($depth)

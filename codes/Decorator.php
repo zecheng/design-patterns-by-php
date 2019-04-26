@@ -6,8 +6,8 @@ abstract class Component
 }
 
 /**
-* ConcreteComponent
-*/
+ * ConcreteComponent
+ */
 class ConcreteComponent extends Component
 {
     public function Operation()
@@ -29,16 +29,15 @@ abstract class Decorator extends Component
     // 重写Operation(),实际执行的是component的Operation方法
     public function Operation()
     {
-        if ($this->component != null)
-        {
+        if ($this->component != null) {
             $this->component->Operation();
         }
     }
 }
 
 /**
-* ConcreteDecoratorA
-*/
+ * ConcreteDecoratorA
+ */
 class ConcreteDecoratorA extends Decorator
 {
     // 本类的独有功能，以区别于ConcreteDecoratorB
@@ -57,8 +56,8 @@ class ConcreteDecoratorA extends Decorator
 
 
 /**
-* ConcreteDecoratorB
-*/
+ * ConcreteDecoratorB
+ */
 class ConcreteDecoratorB extends Decorator
 {
     public function Operation()

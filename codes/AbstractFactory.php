@@ -58,7 +58,7 @@ interface IUser
     public function getUser($id);
 }
 
-class SqlserverUser implements IUser 
+class SqlserverUser implements IUser
 {
     public function insert(User $user)
     {
@@ -71,7 +71,7 @@ class SqlserverUser implements IUser
     }
 }
 
-class AcessUser implements IUser 
+class AcessUser implements IUser
 {
     public function insert(User $user)
     {
@@ -142,7 +142,7 @@ interface IDepartment
     public function getDepartment($id);
 }
 
-class SqlserverDepartment implements IDepartment 
+class SqlserverDepartment implements IDepartment
 {
     public function insert(Department $department)
     {
@@ -155,7 +155,7 @@ class SqlserverDepartment implements IDepartment
     }
 }
 
-class AcessDepartment implements IDepartment 
+class AcessDepartment implements IDepartment
 {
     public function insert(Department $department)
     {

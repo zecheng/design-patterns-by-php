@@ -112,8 +112,7 @@ class CommonManager extends Manager
 {
     public function requestApplications(Request $request)
     {
-        if ($request->getRequestType() === 'dayoff' && $request->getNumber() <=2)
-        {
+        if ($request->getRequestType() === 'dayoff' && $request->getNumber() <=2) {
             echo $this->name.":".$request->getRequestContent()." times:".$request->getNumber()."\n";
         } else {
             if ($this->superior != null) {
@@ -127,8 +126,7 @@ class MajaorManager extends Manager
 {
     public function requestApplications(Request $request)
     {
-        if ($request->getRequestType() === 'dayoff' && $request->getNumber() <=5)
-        {
+        if ($request->getRequestType() === 'dayoff' && $request->getNumber() <=5) {
             echo $this->name.":".$request->getRequestContent()." times:".$request->getNumber()."\n";
         } else {
             if ($this->superior != null) {
@@ -142,10 +140,9 @@ class GeneralManager extends Manager
 {
     public function requestApplications(Request $request)
     {
-        if ($request->getRequestType() === 'dayoff')
-        {
+        if ($request->getRequestType() === 'dayoff') {
             echo $this->name.":".$request->getRequestContent()." times:".$request->getNumber()."\n";
-        } else if ($request->getRequestType() === 'salary' && $request->getNumber() <= 500){
+        } else if ($request->getRequestType() === 'salary' && $request->getNumber() <= 500) {
             echo $this->name.":".$request->getRequestContent()." money:".$request->getNumber()."\n";
         } else {
             echo "no way!\n";
